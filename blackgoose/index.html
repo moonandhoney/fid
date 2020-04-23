@@ -1,47 +1,108 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #123;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
 <body>
 
-<body style="background-color:lightgray;">	
-<head>
-  <meta charset="utf-8">
-  <title>Black Goose Bistro</title>
-</head>
-	
-
-<body>
-  <h1><center><img src="https://i.imgur.com/RX8ZGHh.png" alt = "Black Goose Logo" width="128" height="128" /><br />Black Goose Bistro</center></h1>
-
-<hr>
-	
-<center><div class="topnav">
-  <a href="https://moonandhoney.github.io/fid/blackgoose/">Home</a>
-  <a href="https://moonandhoney.github.io/fid/blackgoose/about.html">About</a>
+<div class="navbar">
+    <a href="https://moonandhoney.github.io/fid/blackgoose/">Home</a>
   <a href="https://moonandhoney.github.io/fid/blackgoose/menu.html">Menu</a>
   <a href="https://moonandhoney.github.io/fid/blackgoose/blog.html">Blog</a>
-  <a href="https://moonandhoney.github.io/fid/blackgoose/contact.html">Contact</a>	
-</div></center>
-	
-	
-<h2 style="color:#b34700;">The Restaurant</h2>
-<p><b>The Black Goose Bistro offers casual lunch and dinner fare in a hip atmosphere. The menu changes regularly to highlight the freshest ingredients.</b></p>
+   <a href="https://moonandhoney.github.io/fid/blackgoose/about.html">About</a>
+  <a href="https://moonandhoney.github.io/fid/blackgoose/contact.html">Contact</a>
+</div>
 
-<h2 style="color:#b34700;">Catering Services</h2>
-<p><b>You have fun.. <i>we'll do the cooking.</i> Black Goose catering can handle events from snacks for bridge club to elegant corporate fundraisers.</b></p>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-<h2 style="color:#b34700;">Location and Hours</h2>
-<p><b>Seekonkm Massachusetts
-<br>Monday through Thursday 11am to 9pm</br>
-Friday and Saturday 11am to midnight</b></p>
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.imgur.com/XtcFdZU.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
 
-<h2 style="color:#b34700;">Customer Reviews</h2>
-<p><img src="https://i.imgur.com/6wRUDaH.png" alt="five stars" width="200" height="40"><br> <b>Gordon Ramsay</b> — <em>12/31/19</em><br>
-I bought pizza to-go for my wife and I on New Years, and we loved it! Beautifully made, outstanding work.</p>
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
 
-  <center>
-	  <b><p>Now serving pizza!</p></b>
-      <a href="https://moonandhoney.github.io/fid/blackgoose/pizza.html"><img src="https://i.gifer.com/H5nP.gif" alt="pizza" style="height:auto; width:10%"></a></p></center>	
+.hero-text button: hover {
+  background-color: #555;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Black Goose Bistro</h1>
+    <div class="sqs-slice yui3-widget sqs-slice-body sqs-slice-body-content" data-slice-type="body" data-slice-id="595dbd266a4963c876effb8a" id="yui_3_17_2_1_1587616089702_341"><p style="white-space: pre-wrap;"><strong>Hours:</strong><br>Mon-Thur | 11am - 9pm <br>Fri-Sat | 11am - Midnight</p><p style="white-space: pre-wrap;"><strong>Phone:</strong><br>407-000-JENS</p><p style="white-space: pre-wrap;"><strong>Address:</strong><br>1234 Black Goose Ave<br>Seekonkm, Massachusetts 02771</p><p data-rte-preserve-empty="true" style="white-space: pre-wrap;"></p></div>
+    <button onclick="window.location.href = 'https://moonandhoney.github.io/fid/blackgoose/menu.html';">Menu</button>
+  </div>
+</div>
+
 
 </body>
 </html>
