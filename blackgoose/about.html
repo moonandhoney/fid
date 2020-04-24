@@ -59,88 +59,68 @@ body {font-family: Arial, Helvetica, sans-serif;}
    <a href="https://moonandhoney.github.io/fid/blackgoose/about.html">About</a>
   <a href="https://moonandhoney.github.io/fid/blackgoose/contact.html">Contact</a>
 </div>
-
+<br>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-html {
-  box-sizing: border-box;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
 }
 
-.column {
-  float: center;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-  background-color: white;
-
-}
-
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container {
-  padding: 0 16px;
-}
-
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-  background-color: #000;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
+.flip-card-inner {
+  position: relative;
   width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.button:hover {
-  background-color: #555;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #A4772E;
+  color: white;
+  transform: rotateY(180deg);
 }
 </style>
 </head>
-
-<br>
-<body>
-
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="https://i.imgur.com/sSZ4qBS.jpg" alt="Jen" style="width:100%">
-      <div class="container">
-        <h2>Jen's Kitchen</h2>
-        <p>The recipes listed here are ones that I have developed myself. In some cases, I started with a recipe found in a cookbook or magazine, but over time, I've adapted it enough to call it my own. <i> Bon Appetit!</i></p>
-        <p>jen@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
+<center><body>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://i.imgur.com/sSZ4qBS.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Jen's Kitchen</h1> 
+      <p>The recipes listed here are ones that I have developed myself. In some cases, I started with a recipe found in a cookbook or magazine, but over time, I've adapted it enough to call it my own. <i>Bon Appetit!</i></p> 
+      <p>jen@example.com</p>
     </div>
   </div>
+</div>
 
-
-</body>
+</body></center>
 </html>
-
