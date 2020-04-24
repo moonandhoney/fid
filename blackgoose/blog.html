@@ -1,132 +1,223 @@
-<html><head>
-    <meta charset="utf-8">
-    <title>BGnews</title>
-    <style>
+<!DOCTYPE html>
+<html>
+<head>
 
-    body {
-      background-color: #C7C9C7;
-      margin: 0 10%;
-      font-family: sans-serif;
-       }
+<html>
 
-    h1 {
-      text-align: center;
-      font-family: serif;
-      font-weight: normal;
-      text-transform:             uppercase;
-      border-bottom: 1px solid    #57b1dc;
-      margin-top: 30px;
-    }
-    h2 {
-      color: #d1633c;
-      font-size: 1em;
-    }
-    h3 {
-      color: #d1633c;
-      font-size: 1em;
-    }
 
-    </style>
-  </head>
+<body style="background-color: #71560D;">
 
-  <body>
+<br>
+<! -- MENU BAR ––>
 
-    <header><h1>Black Goose Bistro News</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
 
-<center><div class="topnav">
-  <a href="https://moonandhoney.github.io/fid/blackgoose/">Home</a>
-  <a href="https://moonandhoney.github.io/fid/blackgoose/about.html">About</a>
+.navbar {
+  width: 100%;
+  background-color: #CC9C6D;
+  background-image: linear-gradient(#A4772E, #FBD8B3);
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: New Century Schoolbook, TeX Gyre Schola, seri;
+  width: 20%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #E3C28D;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+<body>
+
+<div class="navbar">
+    <a href="https://moonandhoney.github.io/fid/blackgoose/">Home</a>
   <a href="https://moonandhoney.github.io/fid/blackgoose/menu.html">Menu</a>
   <a href="https://moonandhoney.github.io/fid/blackgoose/blog.html">Blog</a>
-  <a href="https://moonandhoney.github.io/fid/blackgoose/contact.html">Contact</a>	
-  <a href="https://moonandhoney.github.io/fid/blackgoose/cookingwithdaniel.html">Cooking with Daniel</a>	  
-</div></center>
+   <a href="https://moonandhoney.github.io/fid/blackgoose/about.html">About</a>
+  <a href="https://moonandhoney.github.io/fid/blackgoose/contact.html">Contact</a>
+</div>
 
-    <article>
-      <header><h2>Summer Menu Items</h2>
-        <p><time datetime="2017-06-18">posted by BGB, June 18, 2017</time></p>
-      </header>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-      <p>Our chef has been busy putting together the perfect menu for the summer
-        months. Stop by to try these appetizers and main courses while the days
-        are still long.</p>
+body {
+  font-family: Arial;
+  font-size: 11.5px;
+}
 
-   <section id="appetizers">
-      <h3>Appetizers</h3>
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-      <dl>
-        <dt>Black bean purses</dt>
-        <dd>
-          Spicy black bean and a blend of Mexican cheeses wrapped in sheets
-          of phyl-lo and baked until golden.
-          <span class="price" $3.95<="" span="">
-        </span></dd>
-        <dt class="new item">
-          Southwestern napoleons with lump crab -- <strong>new item!</strong>
-        </dt>
-        <dd>
-          Layers of light lump crab meat, bean and corn salsa, and our handmade
-          flour torillas.
-          <span class="price" $7.95<="" span="">
-        </span></dd>
-      </dl>
-    </section>
+.container img {vertical-align: middle;}
 
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+<br>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    <section id="maincourses">
-      <h3>Main courses</h3>
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
 
-          <dl>
-            <dt>Shrimp sate kebabs with peanut sauce</dt>
-            <dd>
-              Skewers of shrimp marinated in lemongrass, garlic, and fish sauce
-              then grilled to perfection.Served with spicy peanut sauce and
-              jasmine rice.
-              <span id="price" $12.95<="" span="">
-            </span></dd>
-            <dt class="new item">
-              Jerk rotisserie chicken with fried plantains --
-              <strong>new item!</strong>
-            </dt>
-            <dd>
-              Tender chicken slow-roasted on the rotisserie, flavored with spicy
-              and fragrant jerk suace and served with fried plantains and fresh
-              mango. <span class="price" $12.95<="" span="">
-            </span></dd>
-            </dl>
-        </section>
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
 
-      <article>
-      <header>
-        <h2>Low and Slow</h2>
-        <p>posted by BGB, <time>November 15, 2016</time></p>
-      </header>
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
 
-        <p>This week I am <em>extremly</em> excited about a new cooking technique called <dfn><i>sous
-          vide</i></dfn>. In <i>sous vide</i> cooking, you submerge the food (usually vacuum-sealed
-          in plastic) into a water bath that is precisely set to the target
-          temperature you want the food to be cooked to. In his book, <cite>Cooking for
-          Geeks</cite>, Jeff Potter describes it as <q>ultra-low-temperature poaching.</q></p>
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
 
-          <p>Next month, we will be serving <b><i>Sous Vide</i> Salmon with Dill Hollandaise</b>. To
-            reserve a seat at the chef table, contact us before November 30.</p>
-      </article>
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
 
+/* Add a card effect for articles */
+.card {
+   background-color: #E8D0A5;
+   padding: 20px;
+   margin-top: 20px;
+}
 
-      <footer>
-        <div id="about">
-          <p>Location:<br>
-            Baker's Corner, Seekonk, MA</p>
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
-          <p>Hours:<br>
-            Tuesday-Saturday, <time>11am to 11pm</time>
-          </p>
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
 
-          <small>All Content copyright © 2017, Black Goose Bistro and Jennifer Robbins</small>
-        </div></footer>
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
 
+<center><h1 style="color:white">2017</h1></center>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Summer Menu Items</h2>
+      <h5>Posted by BGB, June 18, 2017</h5>
+     <center><img src="https://goop.com/wp-content/uploads/2018/07/summer-dinner-party-hero-v2-1-1024x780.jpg" alt="summer" style="height:200px;"></center>
+      <p>Our chef has been busy putting together the perfect menu for the summer months. Stop by to try these appetizers and main courses while the days are still long.</p>
+    </div>
+    <div class="card">
+      <h2>Appetizers</h2>
+      <h5>Posted by BGB, April 3, 2017</h5>
+     <center><img src="https://www.kaleandcaramel.com/wp-content/uploads/2017/01/close-mexican-wrap-black-beans-goat-cheese-1024x683.jpg" alt="appetizers" style="height:200px;"></center>
+      <p><b>Black bean purses</b> Spicy black bean and a blend of Mexican cheeses wrapped in sheets of phyl-lo and baked until golden.<br>
+<b>Southwestern napoleons with lump crab -- new item!</b>
+Layers of light lump crab meat, bean and corn salsa, and our handmade flour torillas.</p>
+    </div>
+  </div> 
+
+      <div class="card">
+      <h2>Main courses</h2>
+      <h5>Posted by BGB, February 12, 2017</h5>
+       <center><img src="https://www.southerncastiron.com/wp-content/uploads/2018/05/shrimp.jpg" alt="main courses" style="height:200px;"></center>
+      <p><b>Shrimp sate kebabs with peanut sauce</b>
+Skewers of shrimp marinated in lemongrass, garlic, and fish sauce then grilled to perfection.Served with spicy peanut sauce and jasmine rice.<br>
+<b>Jerk rotisserie chicken with fried plantains -- new item!</b>
+Tender chicken slow-roasted on the rotisserie, flavored with spicy and fragrant jerk suace and served with fried plantains and fresh mango.</p>
+    </div>
+  </div>
+ <div>
+ <center><h1 style="color:white">2016</h1></center>
+    <div class="card">
+      <h2>Low and Slow</h2>
+      <h5>Posted by BGB, November 15, 2016</h5>
+    <center><img src="https://culinaryreviewer.com/wp-content/uploads/sous-vide-safe.jpg" alt="low and slow" style="height:200px;"></center>
+      <p>This week I am extremly excited about a new cooking technique called sous vide. In sous vide cooking, you submerge the food (usually vacuum-sealed in plastic) into a water bath that is precisely set to the target temperature you want the food to be cooked to. In his book, Cooking for Geeks, Jeff Potter describes it as "ultra-low-temperature poaching."
       
+<br>
 
+Next month, we will be serving Sous Vide Salmon with Dill Hollandaise. To reserve a seat at the chef table, contact us before November 30.
 
-      
-</article></header></body></html>
+<br>
+
+<b>Location:</b>
+Baker's Corner, Seekonk, MA
+<br>
+<b>Hours:</b>
+Tuesday-Saturday, 11am to 11pm</p>
+    </div>
+  </div> 
+ 
+</body>
+</html>
